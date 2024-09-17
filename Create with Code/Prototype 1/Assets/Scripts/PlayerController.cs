@@ -2,17 +2,10 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    // Start is called before the first frame update
-
-    private float speed = 5.0f;
-    private float turnSpeed;
+    private readonly float speed = 18.0f;
     private float horizontalInput;
     private float forwardInput;
-    void Start()
-    {
-    }
 
-    // Update is called once per frame
     void Update()
     {
         horizontalInput = Input.GetAxis("Horizontal");
