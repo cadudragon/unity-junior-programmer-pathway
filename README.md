@@ -29,6 +29,4 @@ This repository contains my personal implementation of the Unity Junior Programm
 **Note:** This repository not only includes the course code but also features significant improvements in coding performance and best practices. All changes are explained with comments marked `//IMPROVEMENT`.
 
 Stay connected with us:
-- [YouTube](https://www.youtube.com/@GamesDevQuest)
-- [Instagram](https://www.instagram.com/gamedevquest/)
 - [Sketchfab](https://sketchfab.com/gamedevquest)
