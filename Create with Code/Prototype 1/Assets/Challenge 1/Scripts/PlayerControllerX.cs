@@ -38,8 +38,10 @@ public class PlayerControllerX : MonoBehaviour
     {
         biplane.MoveForward();
         biplane.Tilt(verticalInput);
+        biplane.SpinPropeller();
+        //Extra rotation
         biplane.HandleRoll(BiplaneBehaviour.AerialManeuver.BarrelRoll, barrelRollKey, 180f);
         biplane.HandleRoll(BiplaneBehaviour.AerialManeuver.FlatTurn, flatTurnKey, 180f);
-        biplane.SpinPropeller();
+
     }
 }

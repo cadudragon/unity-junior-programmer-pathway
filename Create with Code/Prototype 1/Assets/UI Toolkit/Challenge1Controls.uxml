@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/ShowControls.uss?fileID=7433441132597879392&amp;guid=ac04dc0205ae2fb478549f7179e1df97&amp;type=3#ShowControls" />
+    <ui:VisualElement name="Div" style="flex-grow: 1; flex-direction: column-reverse;">
+        <ui:Label tabindex="-1" text="Press Space: Perfome a flat turn" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Header" class="header" />
+        <ui:Label tabindex="-1" text="Press or hold B: Perform a Barrel Roll" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Header2" class="header" />
+        <ui:Label tabindex="-1" text="Press W or S: Tilt the plane" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Header3" class="header" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -13,6 +13,7 @@ This repository contains my personal implementation of the Unity Junior Programm
 | Project 	| Editor version 	|
 |---	|---	|
 | Prototypes 1	| 2022.3.42f1	|
+| Prototypes 2	| 6000.0.20f1	|
 <!-- | Prototypes 3-5 	| 2022.3.42f1 	|
 | Challenge 1	| 2022.3.42f1	|
 | Challenges 2-5	| 2022.3.42f1 	|
@@ -32,3 +33,4 @@ Stay connected with us:
 - [YouTube](https://www.youtube.com/@GamesDevQuest)
 - [Instagram](https://www.instagram.com/gamedevquest/)
 - [Sketchfab](https://sketchfab.com/gamedevquest)
+
