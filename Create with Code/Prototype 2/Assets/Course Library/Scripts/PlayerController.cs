@@ -3,14 +3,18 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float horizontalInput;
+    private bool shootProjectile;
     public float speed = 5.0f;
     private const float leftBoundary = -10.0f;
     private const float rightBoundary = 10.0f;
 
+    public GameObject projectilePreFab;
+
     void Update()
     {
-        // Get horizontal input
         horizontalInput = Input.GetAxis("Horizontal");
+        shootProjectile = Input.GetKeyDown(KeyCode.Space);
+        ShootProjectile();
     }
 
     /// <summary>
@@ -30,9 +34,19 @@ public class PlayerController : MonoBehaviour
 
         // Clamp the new position within the boundaries
         newPosition.x = Mathf.Clamp(newPosition.x, leftBoundary, rightBoundary);
-        Debug.Log($"move{move} [{newPosition.x} - {newPosition.y} - {newPosition.z}]");
+
 
         // Update the player's position
         transform.position = newPosition;
+    }
+
+    private void ShootProjectile()
+    {
+
+        //Debug.Log($"shootProjectile : {shootProjectile}]");
+        if (shootProjectile)
+        {
+            Instantiate(projectilePreFab, transform.position, projectilePreFab.transform.rotation);
+        }
     }
 }
