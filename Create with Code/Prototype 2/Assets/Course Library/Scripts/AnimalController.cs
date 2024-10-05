@@ -3,7 +3,7 @@ using UnityEngine;
 public class AnimalController : MonoBehaviour
 {
     private readonly float boundarie = -10;
-    public float speed = 20.0f;
+    public float speed = 5.0f;
 
     void Update()
     {
@@ -18,5 +18,11 @@ public class AnimalController : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Destroy(gameObject);
+        Destroy(other.gameObject);
     }
 }

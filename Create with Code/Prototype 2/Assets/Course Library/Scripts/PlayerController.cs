@@ -5,8 +5,8 @@ public class PlayerController : MonoBehaviour
     public float horizontalInput;
     private bool shootProjectile;
     public float speed = 5.0f;
-    private const float leftBoundary = -10.0f;
-    private const float rightBoundary = 10.0f;
+    private const float leftBoundary = -17.0f;
+    private const float rightBoundary = 17.0f;
 
     public GameObject projectilePreFab;
 

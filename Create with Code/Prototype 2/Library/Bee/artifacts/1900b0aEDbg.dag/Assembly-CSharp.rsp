@@ -402,6 +402,7 @@
 "Assets/Course Library/Scripts/AnimalController.cs"
 "Assets/Course Library/Scripts/PlayerController.cs"
 "Assets/Course Library/Scripts/ProjectileController.cs"
+"Assets/Course Library/Scripts/SpawnManager.cs"
 -langversion:9.0
 /deterministic
 /optimize-
