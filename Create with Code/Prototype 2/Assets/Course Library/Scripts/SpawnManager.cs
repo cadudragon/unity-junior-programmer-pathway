@@ -37,6 +37,5 @@ public class SpawnManager : MonoBehaviour
     private void DecreaseMaxSpawnTime()
     {
         maxSpawnTime -= 0.01f;
-        Debug.Log("Max Spawn Time decreased to: " + maxSpawnTime);
     }
 }
