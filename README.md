@@ -12,10 +12,13 @@ This repository contains my personal implementation of the Unity Junior Programm
 
 | Project 	| Editor version 	|
 |---	|---	|
-| Prototypes 1	| 2022.3.42f1	|
-| Prototypes 2	| 6000.0.20f1	|
+| Prototypes 1	| 6000.0.23f1	|
+| Prototypes 2	| 6000.0.23f1	|
+| Challenge 1-2	| 6000.0.23f1	|
+| Mod The Cube	| 6000.0.23f1	|
+
 <!-- | Prototypes 3-5 	| 2022.3.42f1 	|
-| Challenge 1	| 2022.3.42f1	|
+
 | Challenges 2-5	| 2022.3.42f1 	|
 | Counting Prototype	| 2022.3.42f1	|
 | Error Project	| 2022.3.42f1	|
