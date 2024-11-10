@@ -2,10 +2,15 @@ using UnityEngine;
 
 public class ObstacleController : MonoBehaviour
 {
-    [SerializeField] private float speed = 30;
+    private const float Speed = 22;
+    private const float LeftBoundary = 15;
 
     void Update()
     {
-        transform.Translate(Time.deltaTime * speed * Vector3.left);
+        transform.Translate(Time.deltaTime * Speed * Vector3.left);
+        if (transform.position.y < -LeftBoundary)
+        {
+            Destroy(gameObject);
+        }
     }
 }
