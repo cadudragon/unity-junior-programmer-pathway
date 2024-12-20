@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed = 10.0f;
+    [SerializeField] private float moveSpeed = 100.0f;
     private Rigidbody _playerRb;
     private float _horizontalInput;
     private float _verticalInput;
@@ -62,5 +62,20 @@ public class PlayerController : MonoBehaviour
             transform.position.y,
             Mathf.Clamp(transform.position.z, -ZBoundary, ZBoundary)
         );
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Power_Up"))
+        {
+            Destroy(other.gameObject);
+        }
     }
 }
