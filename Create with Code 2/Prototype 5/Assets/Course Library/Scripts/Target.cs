@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -5,10 +6,12 @@ public class Target : MonoBehaviour
 {
     [SerializeField] private ParticleSystem explosionParticle;
     [SerializeField] private int pointValue;
-    
+    [SerializeField] private bool shouldTriggerGameOver;
+
     private GameManager _gameManager;
     private Rigidbody _targetRb;
-    
+
+    private bool _isMouseDown;
     private const float MaxTorque = 1.5f;
     private const float MinSpeed = 12;
     private const float MaxSpeed = 16;
@@ -23,12 +26,25 @@ public class Target : MonoBehaviour
         ApplyForce();
     }
 
-    private void OnMouseDown()
+    private void Update()
     {
-        Destroy(gameObject);
-        Instantiate(explosionParticle, transform.position, explosionParticle.transform.rotation);
-        _gameManager.SetScore(pointValue);
-        
+        _isMouseDown = Input.GetMouseButton(0);
+    }
+
+    private void OnMouseOver()
+    {
+     
+        if (!_gameManager.gameOver &&  _isMouseDown)
+        {
+            Destroy(gameObject);
+            Instantiate(explosionParticle, transform.position, explosionParticle.transform.rotation);
+            _gameManager.SetScore(pointValue);
+        }
+
+        if (shouldTriggerGameOver && _isMouseDown)
+        {
+            _gameManager.GameOver();
+        }
     }
 
     private void OnTriggerEnter(Collider other)
